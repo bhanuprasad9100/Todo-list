@@ -1,0 +1,41 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <meta name="theme-color" content="#7952b3">
+    <title>Todo-List Application</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Todo.css">
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  </head>
+  <body class="text-center">
+    
+<main >
+  <form>
+    <img id="movingImage" class="mb-4" src="data:image/jpeg;base64,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" alt="" width="250" height="250">
+    <h1 class="h1 mb-3 fw-normal" id="form-h1">Todo-List Application</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter your task..." class="wider-input">
+    <button type="button" class="btn btn-primary" onclick="addTask()" id="add">Add Task</button>
+    <div id="taskContainer">
+      <h1>Saved Tasks</h1>
+      <ul id="taskList"></ul>
+    </div>
+  </form>
+</main>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="Todo.js"></script>
+
+</body></html>
